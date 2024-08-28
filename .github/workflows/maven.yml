@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: simple
+    runs-on: simple-latest
 
     steps:
     - uses: actions/checkout@v4
