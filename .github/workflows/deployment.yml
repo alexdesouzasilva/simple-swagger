@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Deploy Project
 
 on:
   push:
@@ -23,3 +23,9 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Tests with Maven
       run: mvn test
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: echo "Deploying..."
